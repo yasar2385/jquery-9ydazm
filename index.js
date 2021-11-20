@@ -64,7 +64,7 @@ function validateStepInput(tour, inputSelector) {
       }
     }
   }
-
+  console.log(invalidStep);
   return invalidStep == -1;
 }
 
