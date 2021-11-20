@@ -48,15 +48,18 @@ function validateStepInput(tour, inputSelector) {
       var val = $attachedEl.val();
       if (val.length == 0) {
         invalidStep = tour.getCurrentStep();
+        console.log('FIRT ==>' + invalidStep);
       }
     } else if ($attachedEl.attr('type') == 'radio') {
       var anyChecked = $attachedEl.is(':checked');
       if (!anyChecked) {
+        console.log('SECOND ==>' + invalidStep);
         invalidStep = tour.getCurrentStep();
       }
     } else if ($attachedEl.attr('type') == 'checkbox') {
       var anyChecked = $attachedEl.is(':checked');
       if (!anyChecked) {
+        console.log('THIRD ==>' + invalidStep);
         invalidStep = tour.getCurrentStep();
       }
     }
