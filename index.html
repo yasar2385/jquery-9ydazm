@@ -1,0 +1,48 @@
+<head>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/js/bootstrap-tour.min.js"
+    integrity="sha512-kcDHM4gaMoZGaCaJ56XjGiknuwMeQFxssvIDnuuCp22PJYO8XvOeMibWtkdZTZtbPXfvLE9WweEVToVtM/wlMw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/css/bootstrap-tour-standalone.min.css"
+    integrity="sha512-Ip/QaNzZ+ktVF+SKYnWTriTa3MY5PB1toFS0wmFUuqoHEmxhfUn8dQUse70nJdonrKvwmYYvAGByX9pjePYboA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/css/bootstrap-tour.min.css"
+    integrity="sha512-sFyS37kke5UvcMHcV8k0NSAT2QWjeLEXKVm0JOXgFd8cd1XMMWqez/mL64g6m+HAS8jBjvPwi5ctTiYX2BRRpQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/js/bootstrap-tour-standalone.min.js"
+    integrity="sha512-KlU17Q8b+noPYQtMWXM8BO08lReJoX3AHxYm7Zyi3UpYYkE4ch7r8d82DGitdIE3r82OW20VMQLVwsYyXo99sQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $('#test').html('<em>It works!</em>');
+      $('#test em').css({ color: '#0c0' });
+    });
+  </script>
+</head>
+<body>
+  <h1>Test</h1>
+  <p id="test"><strong style="color: #f00">It does not work</strong></p>
+
+  <br />
+  Input 1 <input type="text" id="text1" /><br /><br />
+  Input 2 <input type="text" id="text2" /><br /><br />
+  <input type="submit" id="submit" value="submit" />
+</body>
